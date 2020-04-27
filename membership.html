@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Input Form">
+    <meta name="keywords" content="">
+    <meta name="author" content="Geoffery Yakub">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+    </head>
+    <body>
+        <header>
+            <p>Martez Fitness</p>
+        </header>
+        <main>
+            
+            <section>
+                <p>Please Complete The Below Fields And Submit Your Membership Form </p>
+                
+                
+                <form action="http://year1.ccpdev.me/FormTest.php" method="get">
+                
+                <label for="first_name">First name:<span class="required">*</span></label>
+                <input type="text" name="first_name" id="first_name" autofocus required><br>
+                <label for="last_name">Last name:<span class="required">*</span></label>
+                <input type="text" name="last_name" id="last_name" required><br>
+                <label for="email">Email:<span class="required">*</span></label>
+                <input type="email" name="email" id="email" required placeholder="martezfitness@example.com"><br>
+                
+                <label for="gender">Gender :</label>
+                <input type="radio" id="gender" name="gender" value="male"> Male
+                <input type="radio" id="gender" name="gender" value="female"> Female
+                <input type="radio" id="gender" name="gender" value="other" checked> Other <br>
+                <label for="internet"> Heard of us:</label>
+                <fieldset>
+                    <input type="checkbox" id="internet" name="internet" value="internet" checked> Internet <br>
+                    <input type="checkbox" class="marginl" id="hear" name="paper" value="paper"> From A Friend <br>
+                    <input type="checkbox" class="marginl" id="hear" name="friend" value="friend"> Flyer <br>
+                    <input type="checkbox" class="marginl" id="hear" name="Add" value="Add"> Others <br>
+                </fieldset>
+                <br>
+                <label for="great">How Did You Find Our HomePage</label>
+                <fieldset>
+                <input type="checkbox" id="great" name="great" value="great" checked>Very Persuasive<br>
+                <input type="checkbox" class="marginl" id="good" name="good" value="good">Persuasive<br>
+                <input type="checkbox" class="marginl" id="average" name="average" value="average">Average<br>
+                <input type="checkbox" class="marginl" id="okay" name="okay" value="okay">Below Average<br>
+                <input type="checkbox" class="marginl" id="bad" name="bad" value="bad">Non Helpful<br>
+                </fieldset>
+               
+                <br>
+                <label for="message">Any Additional Information: </label>
+                
+                <textarea cols="70"rows="5" id="message" name="message" placeholder="Your message must be less than 200 characters" data-maxlength="200"></textarea> <br>
+                
+                <input type="submit" name="submit" id="button" value="Submit">
+                <input type="reset" name="reset" id="reset">
+                
+                </form>
+                <p style="margin-left: 150px"> <span class="required">*</span> <em> indicates a required field </em></p>
+            </section>
+        </main>
+    </body>
+    <footer> 
+            <ul>  
+             <li> <a href="dayone.html"> Plan Day 1 </a></li> 
+               
+             </ul>
+        </footer> 
+</html>
